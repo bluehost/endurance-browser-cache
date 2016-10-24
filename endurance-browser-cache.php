@@ -38,12 +38,12 @@ if ( ! class_exists( 'Endurance_Browser_Cache' ) ) {
 
 			$file_types = wp_parse_args( get_option( 'ebc_filetype_expirations', array() ), $default_files );
 
-			$additions = "<IfModule mod_expires.c>\n\tExpiresActive On\n";
+			$additions = "<IfModule mod_expires.c>\n\tExpiresActive On\n\t";
 			foreach ( $file_types as $file_type => $expires ) {
 				$additions .= 'ExpiresByType ' . $file_type . ' "access plus ' . $expires . '"' . "\n\t";
 			}
 
-			$additions .= "\tExpiresByType image/x-icon \"access plus 1 year\"\n\tExpiresDefault \"access plus 1 weeks\"\n</IfModule>";
+			$additions .= "ExpiresByType image/x-icon \"access plus 1 year\"\n\tExpiresDefault \"access plus 1 weeks\"\n</IfModule>\n";
 			return $additions . $rules;
 		}
 	}
