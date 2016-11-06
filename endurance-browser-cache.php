@@ -14,7 +14,6 @@ if ( ! defined( 'WPINC' ) ) { die; }
 
 define( 'EBC_VERSION', 0.1 );
 
-
 if ( ! class_exists( 'Endurance_Browser_Cache' ) ) {
 	class Endurance_Browser_Cache {
 		function __construct() {
@@ -28,11 +27,11 @@ if ( ! class_exists( 'Endurance_Browser_Cache' ) ) {
 
 		function htaccess_contents( $rules ) {
 			$default_files = array(
-				'image/jpg' => '1 year',
-				'image/jpeg' => '1 year',
-				'image/gif' => '1 year',
-				'image/png' => '1 year',
-				'text/css' => '1 month',
+				'image/jpg'       => '1 year',
+				'image/jpeg'      => '1 year',
+				'image/gif'       => '1 year',
+				'image/png'       => '1 year',
+				'text/css'        => '1 month',
 				'application/pdf' => '1 month',
 				'text/javascript' => '1 month',
 			);
