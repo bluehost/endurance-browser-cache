@@ -23,6 +23,7 @@ if ( ! class_exists( 'Endurance_Browser_Cache' ) ) {
 
 		function hooks() {
 			add_filter( 'mod_rewrite_rules', array( $this, 'htaccess_contents' ) );
+			add_action( 'update_option_ebc_filetype_expirations', 'save_mod_rewrite_rules' );
 		}
 
 		function htaccess_contents( $rules ) {
