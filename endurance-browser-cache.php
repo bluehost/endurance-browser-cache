@@ -23,7 +23,7 @@ if ( ! class_exists( 'Endurance_Browser_Cache' ) ) {
 
 		function hooks() {
 			if ( $this->is_enabled() ) {
-				add_filter( 'mod_rewrite_rules', array( $this, 'htaccess_contents' ), 7 );
+				add_filter( 'mod_rewrite_rules', array( $this, 'htaccess_contents' ), 88 );
 			}
 			add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), array( $this, 'status_link' ) );
 		}
