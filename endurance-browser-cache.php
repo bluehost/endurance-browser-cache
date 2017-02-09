@@ -2,7 +2,7 @@
 /*
 Plugin Name: Endurance Browser Cache
 Description: Browser caching.
-Version: 0.1
+Version: 0.2
 Author: Mike Hansen
 Author URI: https://www.mikehansen.me/
 License: GPLv2 or later
