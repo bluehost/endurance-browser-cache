@@ -52,7 +52,7 @@ if ( ! class_exists( 'Endurance_Browser_Cache' ) ) {
 
 		function is_enabled() {
 			$cache_settings = get_option( 'mm_cache_settings' );
-			if ( isset( $_GET['ebc_toggle'] ) ) {
+			if ( isset( $_GET['ebc_toggle'] ) && is_admin() ) {
 				$valid_values = array( 'enabled', 'disabled' );
 				if ( in_array( $_GET['ebc_toggle'], $valid_values ) ) {
 					$cache_settings['browser'] = $_GET['ebc_toggle'];
