@@ -34,9 +34,14 @@ if ( ! class_exists( 'Endurance_Browser_Cache' ) ) {
 				'image/jpeg'      => '1 year',
 				'image/gif'       => '1 year',
 				'image/png'       => '1 year',
+				'image/svg+xml'	  => '1 month'
 				'text/css'        => '1 month',
 				'application/pdf' => '1 month',
 				'text/javascript' => '1 month',
+				'application/vnd.ms-fontobject' => '1 month',
+				'application/x-font-ttf' => '1 month',
+				'application/x-font-opentype' => '1 month',
+				'application/x-font-woff' => '1 month',
 			);
 
 			$file_types = wp_parse_args( get_option( 'ebc_filetype_expirations', array() ), $default_files );
