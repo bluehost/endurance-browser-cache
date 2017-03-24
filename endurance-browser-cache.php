@@ -2,7 +2,7 @@
 /*
 Plugin Name: Endurance Browser Cache
 Description: Browser caching.
-Version: 0.2
+Version: 0.3
 Author: Mike Hansen
 Author URI: https://www.mikehansen.me/
 License: GPLv2 or later
@@ -37,6 +37,7 @@ if ( ! class_exists( 'Endurance_Browser_Cache' ) ) {
 				'text/css'        => '1 month',
 				'application/pdf' => '1 month',
 				'text/javascript' => '1 month',
+				'text/html'       => '2 hours',
 			);
 
 			$file_types = wp_parse_args( get_option( 'ebc_filetype_expirations', array() ), $default_files );
