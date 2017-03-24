@@ -38,6 +38,7 @@ if ( ! class_exists( 'Endurance_Browser_Cache' ) ) {
 				'text/css'        => '1 month',
 				'application/pdf' => '1 month',
 				'text/javascript' => '1 month',
+				'text/html'       => '2 hours',
 				'application/vnd.ms-fontobject' => '1 year',
 				'application/x-font-ttf' => '1 year',
 				'application/x-font-opentype' => '1 year',
