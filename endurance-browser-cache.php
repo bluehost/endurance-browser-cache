@@ -18,4 +18,6 @@ define( 'EBC_VERSION', 0.4 );
 Code for the Endurance Browser Cache Plugin integrated into the Endurance Page Cache plugin.
 See merge for more information:
 https://github.com/bluehost/endurance-page-cache/commit/fc66c1963adef251bd0741acb1827d5cbc19941b
+
+Endurance_Browser_Cache
 */
